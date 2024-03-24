@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageContainer = document.getElementById("imageContainer");
-    const images = ["../images/1.png", "../images/2.png", "../images/3.png", "../images/4.jpg", "../images/5.jpg"];
+    const images = ["../images/1.jpg", "../images/2.jpg", "../images/3.jpg", "../images/4.jpg", "../images/5.jpg"];
     let currentIndex = 0;
 
     // Función para mezclar el orden de las imágenes
