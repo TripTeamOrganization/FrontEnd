@@ -17,23 +17,33 @@ body {
 
 /* Header */
 header {
-    padding: 20px 0;
+    padding: 20px 20%;
 }
 
 nav ul {
     list-style-type: none;
+    display: grid; /* Utilizamos flexbox para alinear los elementos */
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    padding: 0; /* Eliminamos el relleno para que los elementos no tengan espacios */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-right: 20px; /* Añadimos un espacio entre los elementos li */
+    text-align: center; /* Centramos el texto horizontalmente */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento para evitar espacio adicional */
 }
 
 nav ul li a {
     text-decoration: none;
+    font-size: large;
     color: #333;
     font-weight: bold;
 }
+
 
 /* Hero Section */
 .hero {
@@ -65,10 +75,12 @@ nav ul li a {
     background-color: #0056b3;
 }
 
-/* Features Section */
 .features {
     text-align: center;
     padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
 }
 
 .features h2 {
@@ -93,7 +105,6 @@ nav ul li a {
 .feature p {
     color: #666;
 }
-
 /* Gallery Section */
 .gallery {
     text-align: center;
@@ -105,15 +116,14 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-.swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .swiper-slide img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-height: 300px; /* Establece una altura máxima */
+    object-fit: cover; /* Para mantener la proporción de aspecto */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease-in-out; /* Transición de opacidad */
+
 }
 
 /* Footer */
