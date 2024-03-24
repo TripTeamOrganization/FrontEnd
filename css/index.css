@@ -44,52 +44,62 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .btnEmpezar {
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
+    justify-content: center;
 }
 
 .btnEmpezar .btn {
     display: inline-block;
-    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
-    font-size: 1.2em; /* Ajusta el tamaño del texto */
-    font-weight: bold; /* Hace que el texto sea más grueso */
-    background-color: #007bff;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #4CAF50; /* Verde */
     color: #fff;
     text-decoration: none;
-    border: 2px solid #007bff; /* Añade un borde sólido */
-    border-radius: 10px; /* Aumenta el radio del borde para un aspecto más suave */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Agrega transiciones suaves */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
     margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite; /* Aplica la animación de pulso de manera continua */
 }
 
 .btnEmpezar .btn:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
-    border-color: #0056b3; /* Cambia el color del borde al pasar el cursor */
+    background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    animation: none; /* Detiene la animación cuando el cursor está sobre el botón */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 70px 0;
+    font-family: monospace;
+
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 7em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #666;
-}
-
-
-
-.btn:hover {
-    background-color: #0056b3;
 }
 
 .features {
