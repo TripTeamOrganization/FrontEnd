@@ -1,0 +1,37 @@
+// Estilos para el componente de encabezado
+
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+    .menu {
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .menu-item {
+      color: #fff;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }  

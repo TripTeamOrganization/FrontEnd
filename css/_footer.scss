@@ -1,0 +1,39 @@
+// Estilos para el componente de pie de página  
+  // Aquí puedes continuar definiendo estilos específicos para el pie de página.
+  .footer {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    background-color: #333;
+    color: #fff;
+    row-gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+  
+    .footer-links {
+      margin-bottom: 1rem;
+  
+      .footer-link {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .social-icons {
+      margin-top: 1rem;
+  
+      .social-icon {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-right: 1rem;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
