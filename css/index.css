@@ -1,4 +1,4 @@
-/* Reset de estilos */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    line-height: 1.6;
 }
 
 .container {
@@ -16,84 +15,96 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos del encabezado */
-.header {
-    position: relative;
-    background-color: #f2f2f2;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+/* Header */
+header {
+    padding: 20px 0;
 }
 
-.logo {
-    color: #333;
-    font-size: 2em;
-    text-decoration: none;
-}
-
-.menu-icono {
-    display: none;
-}
-
-.navbar ul {
+nav ul {
     list-style-type: none;
 }
 
-.navbar ul li {
-    display: inline-block;
+nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
-.navbar ul li a {
+nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
-.icons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
 }
 
-/* Estilos del contenido del encabezado */
-.header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.header-txt {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.header-txt h1 {
+.hero h1 {
     font-size: 3em;
-    color: #333;
     margin-bottom: 20px;
 }
 
-.header-txt p {
+.hero p {
+    font-size: 1.2em;
     color: #666;
-    margin-bottom: 30px;
 }
 
-.btn-1 {
+.btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-.btn-1:hover {
-    background-color: #555;
+.btn:hover {
+    background-color: #0056b3;
 }
 
-/* Estilos del Swiper */
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature i {
+    font-size: 3em;
+    color: #007bff;
+}
+
+.feature h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
 .swiper-container {
     width: 100%;
     padding-top: 50px;
@@ -103,4 +114,11 @@ body {
 .swiper-slide img {
     width: 100%;
     height: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
 }
