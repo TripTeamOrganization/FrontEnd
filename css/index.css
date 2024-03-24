@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+ 
 }
 
 /* Header */
@@ -44,11 +45,35 @@ nav ul li a {
     font-weight: bold;
 }
 
+.btnEmpezar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.btnEmpezar .btn {
+    display: inline-block;
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #007bff; /* Añade un borde sólido */
+    border-radius: 10px; /* Aumenta el radio del borde para un aspecto más suave */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Agrega transiciones suaves */
+    margin-top: 20px;
+}
+
+.btnEmpezar .btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+    border-color: #0056b3; /* Cambia el color del borde al pasar el cursor */
+}
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .hero h1 {
@@ -61,15 +86,7 @@ nav ul li a {
     color: #666;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
+
 
 .btn:hover {
     background-color: #0056b3;
@@ -124,11 +141,114 @@ nav ul li a {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     transition: opacity 1s ease-in-out; /* Transición de opacidad */
 
+} /* Estilos generales *//* Contenedor principal de características */
+.features {
+    display: flex;
+    justify-content: center;
 }
+
+/* Contenedor de las tarjetas */
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card, .cardP {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(45% - 20px); /* Ajuste del ancho para una mejor distribución */
+    margin-bottom: 40px; /* Incrementado para una mayor separación entre tarjetas */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el ratón */
+}
+
+/* Título de la tarjeta */
+.card h2, .cardP h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+/* Texto de la tarjeta */
+.card p, .cardP p {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Texto pequeño de la tarjeta */
+.card small, .cardP small {
+    display: block;
+    margin-top: 15px;
+    color: #777777;
+}
+
+/* Lista de elementos */
+.card ul, .cardP ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Puntos de la lista */
+.card ul li, .cardP ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px; /* Ajuste para una mejor disposición */
+}
+
+/* Estilo de los puntos */
+.card ul li::before, .cardP ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #888888;
+}
+
+/* Estilos específicos para la tarjeta Premium */
+.cardP {
+    background-color: #f9f9f9;
+    border: 2px solid #ffcc00;
+}
+
+.cardP h2 {
+    color: #333333; /* Mantenemos el color de texto para la consistencia */
+}
+
+.cardP ul li::before {
+    color: #ffcc00;
+}
+
+/* Efecto de hover */
+.card:hover,
+.cardP:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
     background-color: #f4f4f4;
+}
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Color inicial del fondo */
+    opacity: 0; /* Inicialmente transparente */
+    z-index: -1; /* Coloca detrás de otros elementos */
+    transition: opacity 1s ease; /* Transición de opacidad */
+}
+
+/* Cambia la opacidad gradualmente */
+.dark-overlay.fade-in {
+    opacity: 0.5; /* Opacidad final */
 }
