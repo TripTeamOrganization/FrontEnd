@@ -60,7 +60,7 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     font-size: large;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
 }
 @keyframes pulse {
@@ -112,13 +112,14 @@ nav ul li a {
 }
 
 .hero h1 {
+    color: #ffffff;
     font-size: 7em;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.6em;
-    color: #666;
+    color: #ffffff;
 }
 
 .features {
@@ -157,7 +158,7 @@ nav ul li a {
 .feature h2 {
     font-size: 1.5em;
     margin-top: 20px;
-    color: #333; /* Cambia el color del título */
+    color: #ffffff; /* Cambia el color del título */
 }
 
 .feature p {
