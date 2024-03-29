@@ -44,40 +44,54 @@ header {
     padding: 20px 20%;
 }
 
+.navbar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px; /* Altura del navbar */
+    background-color: rgba(0, 0, 0, 0.888); 
+    z-index: 1;
+}
+
+/* Estilos para el navbar */
+nav {
+    position: relative;
+    z-index: 2; /* Asegura que esté delante del fondo */
+    height: 80px; /* Altura del navbar */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    bottom: 25px;
+}
+
 nav ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: center; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    margin-right: 20px; /* Añadimos un espacio entre los elementos li */
-    text-align: center; /* Centramos el texto horizontalmente */
+    margin-right: 80px; 
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Eliminamos el margen derecho del último elemento para evitar espacio adicional */
+    margin-right: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: large;
-    color: #333;
+    color: #fff;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+
+nav ul li a:hover {
+    color: #ffd700; 
 }
+
 
 .btnEmpezar {
     display: flex;
@@ -89,22 +103,22 @@ nav ul li a {
     padding: 15px 30px;
     font-size: 1.3em;
     font-weight: bold;
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
     margin-top: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite; /* Aplica la animación de pulso de manera continua */
+    animation: pulse 2s infinite; 
 }
 
 .btnEmpezar .btn:hover {
-    background-color: #45a049; /* Verde más oscuro al pasar el cursor */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    animation: none; /* Detiene la animación cuando el cursor está sobre el botón */
+    background-color: #45a049;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
+    animation: none; 
 }
 
 /* Hero Section */
@@ -116,13 +130,14 @@ nav ul li a {
 }
 
 .hero h1 {
+    color: #ffffff;
     font-size: 7em;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.6em;
-    color: #666;
+    color: #ffffff;
 }
 
 .features {
@@ -161,7 +176,7 @@ nav ul li a {
 .feature h2 {
     font-size: 1.5em;
     margin-top: 20px;
-    color: #333; /* Cambia el color del título */
+    color: #ffffff; /* Cambia el color del título */
 }
 
 .feature p {
@@ -177,6 +192,7 @@ s
 }
 
 .gallery h2 {
+    color: #ffffff;
     font-size: 2.5em;
     margin-bottom: 40px;
 }
