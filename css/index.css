@@ -347,6 +347,8 @@ nav ul li a:hover {
     gap: 20px; /* Espacio entre los elementos */
 }
 
+/*testimonios*/
+
 .testimonios {
     background-color: #f9f9f9; /* Color de fondo */
     padding: 40px 0; /* Espaciado interno */
@@ -355,7 +357,6 @@ nav ul li a:hover {
 .testimonios h2 {
     font-size: 1.5rem; /* Tamaño del texto */
     color: #333; /* Color del texto */
-    text-align: center; /* Alineación del texto */
     padding: 25px 0;
 }
 
