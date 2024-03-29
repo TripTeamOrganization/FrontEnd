@@ -347,6 +347,51 @@ nav ul li a:hover {
     gap: 20px; /* Espacio entre los elementos */
 }
 
+/* Estilos Convenios */
+.convenios {
+    padding: 20px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    margin-bottom: 30px;
+}
+
+.slider-container h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilos del carrusel */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Soporte para desplazamiento suave en dispositivos iOS */
+}
+
+.slider img {
+    flex: 0 0 auto;
+    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: 150px; /* Ajusta la altura de las imágenes según sea necesario */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    scroll-snap-align: start;
+}
+
+/* Estilos adicionales para hacer que el carrusel sea responsive */
+@media (max-width: 600px) {
+    .slider img {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+
+
+
 .testimonial {
     padding: 20px;
     background-color: #f2f2f2;
