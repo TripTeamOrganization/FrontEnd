@@ -50,7 +50,7 @@ header {
 }
 
 /* Estilos para el navbar */
-nav {
+nav {    
     height: 50px; /* Altura del navbar */
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
@@ -119,6 +119,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 70px 0;
     font-family: monospace;
+    margin-top: 50px;
 
 }
 
