@@ -398,14 +398,6 @@ nav ul li a:hover {
     border: 2px solid #fff; /* Borde blanco para resaltar */
 }
 
-.author-info img:hover {
-    border-color: #ccc; /* Cambia el color del borde al pasar el mouse */
-}
-
-.author-info a {
-    display: inline-block; /* Hacer que el enlace se comporte como bloque */
-}
-
 /* Estilos adicionales para los subtítulos dentro de la clase .section-content */
 .section-content p {
     font-size: 1.5rem; /* Tamaño del texto */
