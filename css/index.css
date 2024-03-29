@@ -9,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Mantenemos oculto el desplazamiento horizontal */
+    overflow-x: hidden;
+    /* Mantenemos oculto el desplazamiento horizontal */
 }
 
 .video-container {
@@ -31,11 +32,9 @@ video {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-<<<<<<< Updated upstream
-    padding: 0 20px;
-=======
-    padding: 0 20px; 
->>>>>>> Stashed changes
+    <<<<<<< Updated upstream padding: 0 20px;
+    =======padding: 0 20px;
+    >>>>>>>Stashed changes
 }
 
 
@@ -49,18 +48,22 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px; /* Altura del navbar */
-    background-color: rgba(0, 0, 0, 0.888); 
+    height: 65px;
+    /* Altura del navbar */
+    background-color: rgba(0, 0, 0, 0.888);
     z-index: 1;
 }
 
 /* Estilos para el navbar */
 nav {
     position: relative;
-    z-index: 2; /* Asegura que esté delante del fondo */
-    height: 80px; /* Altura del navbar */
+    z-index: 2;
+    /* Asegura que esté delante del fondo */
+    height: 80px;
+    /* Altura del navbar */
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
     bottom: 25px;
 }
 
@@ -73,7 +76,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 80px; 
+    margin-right: 80px;
 }
 
 nav ul li:last-child {
@@ -89,7 +92,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700; 
+    color: #ffd700;
 }
 
 
@@ -103,22 +106,22 @@ nav ul li a:hover {
     padding: 15px 30px;
     font-size: 1.3em;
     font-weight: bold;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     margin-top: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite; 
+    animation: pulse 2s infinite;
 }
 
 .btnEmpezar .btn:hover {
     background-color: #45a049;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
-    animation: none; 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    animation: none;
 }
 
 /* Hero Section */
@@ -144,8 +147,10 @@ nav ul li a:hover {
     text-align: center;
     padding: 50px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    gap: 15px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas de igual tamaño */
+    gap: 15px;
+    /* Espacio entre las columnas */
 }
 
 .features h3 {
@@ -170,21 +175,26 @@ nav ul li a:hover {
 
 .feature i {
     font-size: 3em;
-    color: #4caf50; /* Cambia el color del icono */
+    color: #4caf50;
+    /* Cambia el color del icono */
 }
 
 .feature h2 {
     font-size: 1.5em;
     margin-top: 20px;
-    color: #ffffff; /* Cambia el color del título */
+    color: #ffffff;
+    /* Cambia el color del título */
 }
 
 .feature p {
-    color: #777; /* Cambia el color del texto */
+    color: #777;
+    /* Cambia el color del texto */
     font-size: 1.2em;
 
 }
+
 s
+
 /* Gallery Section */
 .gallery {
     text-align: center;
@@ -197,15 +207,110 @@ s
     margin-bottom: 40px;
 }
 
+
+/* about __________________ */
+.about {
+    text-align: center;
+    padding: 70px 0;
+    font-family: monospace;
+
+}
+
+.about h1 {
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.6em;
+    color: #ffffff;
+}
+
+.about-igame {
+    text-align: center;
+    padding: 70px 0;
+    font-family: monospace;
+
+}
+
+.about-images img {
+    border-radius: 50%;
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container1 {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+
+}
+
+.image-overlay {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container1:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-text {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* about __________________ */
+
 .swiper-slide img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-height: 300px; /* Establece una altura máxima */
-    object-fit: cover; /* Para mantener la proporción de aspecto */
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    max-height: 300px;
+    /* Establece una altura máxima */
+    object-fit: cover;
+    /* Para mantener la proporción de aspecto */
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 1s ease-in-out; /* Transición de opacidad */
+    transition: opacity 1s ease-in-out;
+    /* Transición de opacidad */
 
-} /* Estilos generales *//* Contenedor principal de características */
+}
+
+/* Estilos generales */
+/* Contenedor principal de características */
 .features {
     display: flex;
     justify-content: center;
@@ -220,52 +325,63 @@ s
 }
 
 /* Estilos para las tarjetas */
-.card, .cardP {
+.card,
+.cardP {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(45% - 20px); /* Ajuste del ancho para una mejor distribución */
-    margin-bottom: 40px; /* Incrementado para una mayor separación entre tarjetas */
-    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el ratón */
+    width: calc(45% - 20px);
+    /* Ajuste del ancho para una mejor distribución */
+    margin-bottom: 40px;
+    /* Incrementado para una mayor separación entre tarjetas */
+    transition: transform 0.3s ease-in-out;
+    /* Efecto de transición al pasar el ratón */
 }
 
 /* Título de la tarjeta */
-.card h2, .cardP h2 {
+.card h2,
+.cardP h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #333333;
 }
 
 /* Texto de la tarjeta */
-.card p, .cardP p {
+.card p,
+.cardP p {
     color: #555555;
     margin-bottom: 20px;
 }
 
 /* Texto pequeño de la tarjeta */
-.card small, .cardP small {
+.card small,
+.cardP small {
     display: block;
     margin-top: 15px;
     color: #777777;
 }
 
 /* Lista de elementos */
-.card ul, .cardP ul {
+.card ul,
+.cardP ul {
     padding: 0;
     list-style: none;
 }
 
 /* Puntos de la lista */
-.card ul li, .cardP ul li {
+.card ul li,
+.cardP ul li {
     position: relative;
     padding-left: 30px;
-    margin-bottom: 12px; /* Ajuste para una mejor disposición */
+    margin-bottom: 12px;
+    /* Ajuste para una mejor disposición */
 }
 
 /* Estilo de los puntos */
-.card ul li::before, .cardP ul li::before {
+.card ul li::before,
+.cardP ul li::before {
     content: "•";
     position: absolute;
     left: 0;
@@ -279,7 +395,8 @@ s
 }
 
 .cardP h2 {
-    color: #333333; /* Mantenemos el color de texto para la consistencia */
+    color: #333333;
+    /* Mantenemos el color de texto para la consistencia */
 }
 
 .cardP ul li::before {
@@ -300,19 +417,25 @@ footer {
     padding: 20px 0;
     background-color: #f4f4f4;
 }
+
 .dark-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black; /* Color inicial del fondo */
-    opacity: 0; /* Inicialmente transparente */
-    z-index: -1; /* Coloca detrás de otros elementos */
-    transition: opacity 1s ease; /* Transición de opacidad */
+    background-color: black;
+    /* Color inicial del fondo */
+    opacity: 0;
+    /* Inicialmente transparente */
+    z-index: -1;
+    /* Coloca detrás de otros elementos */
+    transition: opacity 1s ease;
+    /* Transición de opacidad */
 }
 
 /* Cambia la opacidad gradualmente */
 .dark-overlay.fade-in {
-    opacity: 0.5; /* Opacidad final */
+    opacity: 0.5;
+    /* Opacidad final */
 }
