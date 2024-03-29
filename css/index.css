@@ -370,10 +370,50 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    text-align: center;
     padding: 20px 0;
     background-color: #f4f4f4;
+    color: #333; /* Color de texto */
 }
+
+.footer-container {
+    margin-left: 15%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre elementos */
+    justify-items: center; /* Centrar elementos horizontalmente */
+    align-items: center; /* Centrar elementos verticalmente */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    justify-self: end; /* Alinear a la derecha */
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3b5998; /* Color de fondo de Facebook */
+    color: #fff; /* Color del icono */
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    text-align: center; /* Alinear texto en el centro del botón */
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+/* Iconos de redes sociales */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 .dark-overlay {
     position: fixed;
     top: 0;
