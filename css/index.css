@@ -293,6 +293,46 @@ s
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Utilizando Grid para las secciones */
+.section-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-us, .convenios, .testimonios {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye los elementos en filas automáticamente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+/* Estilos adicionales para los títulos dentro de la clase .section-content */
+.section-content h2 {
+    font-size: 2.5rem; /* Tamaño del título */
+    font-family:'Times New Roman', Times, serif;
+    color: #0b0c0c; /* Color del texto */
+}
+
+/* Estilos adicionales para los subtítulos dentro de la clase .section-content */
+.section-content p {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #888; /* Color del texto */
+}
 
 /* Footer */
 footer {
