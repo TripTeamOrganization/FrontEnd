@@ -431,17 +431,15 @@ footer {
 }
 
 .footer-container {
-    margin-left: 15%;
-    margin-right: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espacio entre elementos */
-    justify-items: center; /* Centrar elementos horizontalmente */
-    align-items: center; /* Centrar elementos verticalmente */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 5px 15px;
 }
 
 .social-media {
@@ -466,6 +464,17 @@ footer {
     transform: scale(1.1);
 }
 
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 700px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        text-align: center; /* Centra el texto en el footer */
+    }
+
+    .social-media {
+        justify-self: center; /* Centra los iconos de redes sociales */
+    }
+}
 /* Iconos de redes sociales */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
