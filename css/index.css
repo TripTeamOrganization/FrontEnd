@@ -399,6 +399,10 @@ nav ul li a:hover {
     border: 2px solid #fff; /* Borde blanco para resaltar */
 }
 
+.author-info img:hover {
+    transform: scale(1.1);
+}
+
 /* Estilos adicionales para los subtítulos dentro de la clase .section-content */
 .section-content p {
     font-size: 1.5rem; /* Tamaño del texto */
