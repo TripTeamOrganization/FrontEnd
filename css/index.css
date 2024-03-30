@@ -465,10 +465,14 @@ footer {
 }
 
 /* Media queries para dispositivos móviles y tabletas */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .footer-container {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         text-align: center; /* Centra el texto en el footer */
+    }
+
+    .contact-info p {
+        margin: 0.5px 0; /* Reducir el margen entre líneas */
     }
 
     .social-media {
