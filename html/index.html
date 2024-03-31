@@ -27,7 +27,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca</a></li>
+                    <li><a href="#" id="boton-acerca">Acerca</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -175,6 +175,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@7.5.1/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutLink = document.getElementById("boton-acerca");
+
+            aboutLink.addEventListener("click", function (event) {
+                event.preventDefault();
+
+
+                document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
