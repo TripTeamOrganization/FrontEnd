@@ -36,7 +36,7 @@ video {
 
 /* Header */
 header {
-    padding: 20px 20px; /* Ajustado para tener un relleno uniforme */
+    padding: 20px 40px; /* Ajustado para tener un relleno uniforme */
     position: fixed;
     top: 0; /* Fijar en la parte superior */
     left: 0;
