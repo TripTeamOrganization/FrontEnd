@@ -232,7 +232,7 @@ nav ul li a:hover {
 .features {
     text-align: center;
     padding: 25px 0;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 15px; /* Espacio entre las columnas */
 }
@@ -273,6 +273,17 @@ nav ul li a:hover {
     font-size: 1.2em;
 
 }
+@media(max-width:780px){
+    .features{
+        grid-template-columns: 2fr;
+    }
+}
+@media(max-width: 500px){
+    .features{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* Gallery Section */
 .gallery {
@@ -381,7 +392,20 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 660px) {
+    .Cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
+    /* Estilos para las tarjetas en dispositivos móviles */
+    .card, .cardP {
+        width: 300px; 
+        margin-bottom: 10px; /* Espacio entre tarjetas reducido */
+    }
+}
 /* Utilizando Grid para las secciones */
 .section-content {
     width: 80%;
