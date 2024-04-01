@@ -50,7 +50,7 @@ header {
 nav {    
     height: 50px; /* Altura del navbar */
     display: flex;
-    justify-content: right; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
 }
 
@@ -60,6 +60,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 5rem;
+    justify-content: center;
 }
 
 nav ul li {
@@ -79,6 +80,26 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffd700;
+}
+.auth-buttons {
+    margin-left: auto;
+    align-items: center;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #fff;
+    color: #000;
 }
 .toggle_btn {
     color: white;
@@ -110,6 +131,9 @@ nav ul li a:hover {
     justify-content: center;
 }
 @media (max-width: 768px) {
+    nav {    
+        justify-content: right; /* Centrar horizontalmente */
+    }
     nav ul {
         display: none;
     }
@@ -230,9 +254,9 @@ nav ul li a:hover {
 
 
 .features {
+    display: grid;
     text-align: center;
     padding: 25px 0;
-    display: flex;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 15px; /* Espacio entre las columnas */
 }
@@ -273,14 +297,30 @@ nav ul li a:hover {
     font-size: 1.2em;
 
 }
-@media(max-width:780px){
-    .features{
-        grid-template-columns: 2fr;
+/*@media(max-width: 780px) {
+    .feature{
+        width: 80%;
     }
-}
-@media(max-width: 500px){
-    .features{
-        grid-template-columns: 1fr;
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        /*flex-direction: column; /* Columna en lugar de fila */
+/*    }
+}*/
+@media(max-width: 600px) {
+    .feature{
+        width: 80%;
+    }
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        flex-direction: column; /* Columna en lugar de fila */
     }
 }
 
