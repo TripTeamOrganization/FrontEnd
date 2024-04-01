@@ -353,6 +353,7 @@ nav ul li a:hover {
 
 /* Contenedor de las tarjetas */
 .Cards {
+    font-family: 'Roboto';
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
