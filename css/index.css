@@ -218,13 +218,18 @@ s
 
 .about h1 {
     color: #ffffff;
+    border-radius: 70%;
     font-size: 4em;
     margin-bottom: 20px;
 }
 
 .about p {
+    background: #ffffff;
     font-size: 1.6em;
-    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000;
 }
 
 .about-igame {
