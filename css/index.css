@@ -497,6 +497,62 @@ div li a:hover {
     gap: 20px; /* Espacio entre los elementos */
 }
 
+/* Estilos Convenios */
+.convenios {
+    padding: 20px;
+}
+
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    margin-bottom: 50px;
+}
+
+.slider-container h3 {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 200px;
+    height: 150px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+}
+
+.slider p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        max-width: 90%;
+    }
+
+    .slider img {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+
+
 .testimonial {
     padding: 20px;
     background-color: #f2f2f2;
