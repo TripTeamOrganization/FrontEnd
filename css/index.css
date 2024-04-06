@@ -393,9 +393,11 @@ div li a:hover {
         flex-direction: column;
         /* Columna en lugar de fila */
     }
+    
 }
+@media screen and (max-width: 600px) {
 
-
+}
 /* Gallery Section */
 .gallery {
     text-align: center;
@@ -604,18 +606,26 @@ div li a:hover {
 
 .slider p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 5rem;
     color: #ffffff;
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Desactiva el scroll horizontal */
+    }
+
     .section-content {
         max-width: 90%;
     }
 
     .slider img {
-        width: 150px;
-        height: 100px;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .slider p {
+        display: none;
     }
 }
 
@@ -761,6 +771,11 @@ footer {
 
 /* Media queries para dispositivos móviles y tabletas */
 @media (max-width: 768px) {
+
+    .video-container video {
+        height: auto;
+        width: 160rem;
+    }
     .footer-container {
         grid-template-columns: 1fr;
         /* Cambia a una sola columna */

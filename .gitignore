@@ -1,0 +1,20 @@
+# Dependencias
+/node_modules
+
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+
+# Dependencias específicas de los usuarios de npm
+npm-debug.log
+
+# Carpeta de construcción
+/build
+
+# Logs y otros archivos temporales
+*.log
+*.tmp
+*.swp
