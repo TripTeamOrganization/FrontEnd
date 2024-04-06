@@ -1,15 +1,15 @@
 //add onclick event to tag barsIcon to show the menu    
 function mostrarMenu() {
     const divAuthButtons = document.getElementById("authButtonsContainers");
-    if (divAuthButtons.style.display === "block") 
+    if (divAuthButtons.style.display === "block")
         divAuthButtons.style.display = "none";
-    else 
+    else
         divAuthButtons.style.display = "block";
 
     const divBotones = document.getElementById("menuList");
     if (divBotones.style.display === "block")
         divBotones.style.display = "none";
-    else 
+    else
         divBotones.style.display = "block";
 }
 
@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
         img.src = images[index];
         img.alt = "Random Image";
         img.style.opacity = 0; // Establece la opacidad inicial a 0
-        img.onload = function() {
+        img.onload = function () {
             img.style.opacity = 1; // Una vez cargada, establece la opacidad a 1 para mostrar la imagen
         };
-        img.addEventListener("click", function() {
+        img.addEventListener("click", function () {
             // Al hacer clic en la imagen, cambia a la siguiente imagen con animación de evaporación
             img.style.opacity = 0; // Establece la opacidad a 0 para la animación de evaporación
-            setTimeout(function() {
+            setTimeout(function () {
                 currentIndex = (currentIndex + 1) % images.length;
                 renderImage(currentIndex);
             }, 500); // Espera 500ms antes de cambiar a la siguiente imagen
@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Función para cambiar automáticamente la imagen cada 3 segundos con animación de evaporación
     function autoChangeImage() {
-        setInterval(function() {
+        setInterval(function () {
             const img = imageContainer.querySelector("img");
             img.style.opacity = 0; // Establece la opacidad a 0 para la animación de evaporación
-            setTimeout(function() {
+            setTimeout(function () {
                 currentIndex = (currentIndex + 1) % images.length;
                 renderImage(currentIndex);
             }, 500); // Espera 500ms antes de cambiar a la siguiente imagen
@@ -72,7 +72,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Link.addEventListener("click", function (event) {
         event.preventDefault();
-        
+
         document.querySelector(".testimonios").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutLink = document.getElementById("boton-acerca");
+
+    aboutLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
     });
 });

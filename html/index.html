@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripMate</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.5.1/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.5.1/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="video-container">
-    <video src="/images/fondo.mp4" autoplay muted loop style="width: 100%; height: auto;"></video>
+        <video src="/images/fondo.mp4" autoplay muted loop style="width: 100%; height: auto;"></video>
     </div>
     <div class="container">
         <header>
@@ -22,29 +27,29 @@
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca</a></li>
-                    <li><a href="#">Covenios</a></li>
+                    <li><a href="#" id="boton-acerca">Acerca</a></li>
+                    <li><a href="#">Convenios</a></li>
                     <li><a href="#" id="boton-testimonios">Testimonios</a></li>
                 </ul>
                 <div id="divAuthButtonsNav" class="auth-buttons">
                     <a href="login.html">Iniciar sesión</a>
-                    <a href="registro.html">Registrarse</a> 
+                    <a href="registro.html">Registrarse</a>
                 </div>
                 <div class="toggle_btn">
                     <i id="barsIcon" onclick="mostrarMenu()" class="fa-solid fa-bars"></i>
                 </div>
-            
+
                 <div id="authButtonsContainers" class="auth-buttons">
-                    <a href="login.html">Iniciar sesión</a> 
+                    <a href="login.html">Iniciar sesión</a>
                     <a href="registro.html">Registrarse</a>
                 </div>
-                
-                <div id="menuList" class="dropdown_menu">                     
+
+                <div id="menuList" class="dropdown_menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Acerca</a></li>
                     <li><a href="#">Covenios</a></li>
-                    <li><a href="#">Testimonios</a></li>                    
-                </div>    
+                    <li><a href="#">Testimonios</a></li>
+                </div>
             </nav>
         </header>
         <div class="heroclass">
@@ -57,12 +62,13 @@
                     <span>A </span>
                     <span class="highlight">NOSOTROS</span>
                 </h1>
-                <p>Somos el mejor asistente virtual del mercado, capaz de recomendar lo necesario para que no tengas que demorar ni un minuto en cosas que no sean el disfrute de unas asombrosas vacaciones</p>
+                <p>Somos el mejor asistente virtual del mercado, capaz de recomendar lo necesario para que no tengas que
+                    demorar ni un minuto en cosas que no sean el disfrute de unas asombrosas vacaciones</p>
             </section>
         </div>
-        
+
         <section class="btnEmpezar">
-        <a href="#" class="btn">Empezar Ahora</a>
+            <a href="#" class="btn">Empezar Ahora</a>
         </section>
         <section class="features">
 
@@ -88,89 +94,167 @@
                         <li>Asistente personalizado</li>
                     </ul>
                 </div>
-            </div>            
+            </div>
         </section>
-    <!-- Sección Acerca de Nosotros -->
-    <section class="about-us">
-        <div class="section-content">
-            <h2>Acerca de Nosotros</h2>
-            <p>Somos una empresa dedicada a proporcionar soluciones de viaje personalizadas y eficientes...</p>
-        </div>
-    </section>
+        <!-- Sección Acerca de Nosotros -->
+        <section class="about">
+            <h1>Acerca de nosotros</h1>
+            <p>Somos una startup, TripTeam, que se ha propuesto abordar los desafíos habituales que enfrentan los
+                viajeros, como la desorganización, los gastos innecesarios y la pérdida de tiempo, al actuar como el
+                enlace entre ellos y las experiencias de viaje perfectas. Nuestro servicio en TripTeam ofrece opciones
+                de aerolíneas, hoteles, restaurantes y actividades de entretenimiento personalizadas según las
+                preferencias y el presupuesto de cada usuario, eliminando la necesidad de buscar en múltiples sitios
+                web. </p>
+            <div class="about-images">
 
-    <!-- Sección Convenios -->
-    <section class="convenios">
-        <div class="section-content">
-            <h2>Convenios</h2>
-            <br>
-            <p>Trabajamos en estrecha colaboración con aerolíneas, hoteles y restaurantes para ofrecer a nuestros clientes una experiencia de viaje completa y satisfactoria. Además, hemos establecido asociaciones con programas de aerolíneas como Avianca y Sky, así como con hoteles internacionales y restaurantes con estrellas Michelin para ampliar aún más las opciones y beneficios para nuestros clientes:</p><br >
-            <br><br>
-            <!-- Contenedor para imágenes de Avianca y Sky -->
-            <div class="slider-container">
+                <div class="images-wrapper">
+                    <div class="image-container1">
+                        <img src="https://github.com/TripTeamOrganization/Informes/assets/98995070/79dbf73c-6e06-47fe-a345-531161e88620"
+                            alt="estudiante">
+                        <div class="image-overlay">
+                            <div class="image-text"> Mi nombre es Adrián Enrique Jesús Palma ObispoPoseo una amplia
+                                experiencia colaborando eficazmente en equipos, ofreciendo mi apoyo en diversas áreas y
+                                contribuyendo con soluciones tecnológicas. </div>
+                        </div>
+                    </div>
 
-                <div class="slider">
-                    <a href="https://www.avianca.com" target="_blank"><img src="/images/Avianca-logo.png" alt="Avianca"></a>
-                    <a href="https://www.skyairline.com" target="_blank"><img src="/images/sky-logo.png" alt="Sky"></a>
-                    <p><strong>+21</strong> CONVENIOS CON <strong>AEROLÍNEAS</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-            
-            <!-- Contenedor para imágenes de Hoteles Internacionales -->
-            <div class="slider-container">
-                <div class="slider">
-                    <a href="https://www.instagram.com/sheratonlima/?hl=es" target="_blank"><img src="/images/sheraton-logo.png" alt="Hotel Internacional 1"></a>
-                    <a href="https://www.marriott.com" target="_blank"><img src="/images/marriot-logo.png" alt="Hotel Internacional 2"></a>
-                    <p><strong>+69</strong> CONVENIOS CON <strong>HOTELES</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-            
-            <!-- Contenedor para imágenes de Restaurantes con Estrellas Michelin -->
-            <div class="slider-container">
-                <div class="slider">
-                    <a href="https://www.mirazur.fr/" target="_blank"><img src="/images/mirazur-logo.png" alt="Restaurante Estrella Michelin 1"></a>
-                    <a href="https://www.geranium.dk/en/" target="_blank"><img src="/images/geranium-logo.png" alt="Restaurante Estrella Michelin 2"></a>
-                    <p><strong>+169</strong> CONVENIOS CON <strong>RESTAURANTES</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="image-container1">
+                        <img src="https://github.com/TripTeamOrganization/Informes/assets/98995070/712a15a3-030d-4570-ba72-724b1268f23a"
+                            alt="Bárbara Antonella Espinoza Delgado">
+                        <div class="image-overlay">
+                            <div class="image-text"> Bárbara Antonella Espinoza Delgado. Tengo habilidades en dirección
+                                de grupos, SQL, redacción, búsqueda de información confiable, comprensión de conceptos y
+                                fluidez en exposiciones.
+                                Destaco por mi alta exigencia en el cumplimiento de tareas y participación activa. Me
+                                considero una persona estricta y puntual en mis compromisos.</div>
+                        </div>
+                    </div>
 
-    <!-- Sección Testimonios -->
-    <section class="testimonios">
-        <div class="section-content">
-            <h2>Testimonios</h2>
-            <div class="grid-container">
-                <div class="testimonial">
-                    <div class="author-info">
-                        <img src="/images/JuanP.png" alt="JuanPerez">
+                    <div class="image-container1">
+                        <img src="https://github.com/TripTeamOrganization/Informes/assets/98995070/a1230b61-493e-4634-9eeb-fe7993998983"
+                            alt="Jeremy Quispe">
+                        <div class="image-overlay">
+                            <div class="image-text"> Mi nombre es Jeremy Quispe. Me fascina crear soluciones
+                                tecnológicas con un impacto positivo en la sociedad. Agradezco a la universidad por
+                                brindarme recursos que me permiten crecer y adquirir conocimientos constantemente.</div>
+                        </div>
                     </div>
-                    <p>"Gracias a la empresa de organización de viajes, pude disfrutar de unas vacaciones perfectas sin preocuparme por la planificación..."</p>
-                    <p class="author">- Juan Pérez</p>
+
+                    <div class="image-container1">
+                        <img src="https://github.com/TripTeamOrganization/Informes/assets/98995070/018abefb-69f2-4693-b384-faa43ccc95c0"
+                            alt="Leonel Alfaro Cumba">
+                        <div class="image-overlay">
+                            <div class="image-text"> Soy Leonel Alfaro Cumba. Tengo un interés por la tecnología
+                                y la creación de soluciones innovadoras. Estoy emocionado por seguir ampliando mis
+                                conocimientos y desarrollándome continuamente en esta área.</div>
+                        </div>
+                    </div>
+
+                    <div class="image-container1">
+                        <img src="https://github.com/TripTeamOrganization/Informes/assets/98995070/1ffcc794-1c38-4461-9844-372f11b56a28"
+                            alt="Paolo Del Carmen Martinez Villanueva">
+                        <div class="image-overlay">
+                            <div class="image-text"> Mi nombre es Paolo Del Carmen Martínez Villanueva. Me considero una
+                                persona responsable, ordenada y trabajadora. Por ello, pongo a disposición mis
+                                conocimientos y mi forma de
+                                trabajar, y me comprometo a apoyar a mi equipo y a adquirir nuevos conocimientos para
+                                poder aportar todo lo necesario para el trabajo.</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="author-info">
-                        <img src="/images/MariaG.png" alt="MariaGomez">
+
+            </div>
+
+        </section>
+
+
+        <!-- Sección Convenios -->
+        <section class="convenios">
+            <div class="section-content">
+                <h2>Convenios</h2>
+                <br>
+                <p>Trabajamos en estrecha colaboración con aerolíneas, hoteles y restaurantes para ofrecer a nuestros
+                    clientes una experiencia de viaje completa y satisfactoria. Además, hemos establecido asociaciones
+                    con programas de aerolíneas como Avianca y Sky, así como con hoteles internacionales y restaurantes
+                    con estrellas Michelin para ampliar aún más las opciones y beneficios para nuestros clientes:</p>
+                <br>
+                <br><br>
+                <!-- Contenedor para imágenes de Avianca y Sky -->
+                <div class="slider-container">
+
+                    <div class="slider">
+                        <a href="https://www.avianca.com" target="_blank"><img src="/images/Avianca-logo.png"
+                                alt="Avianca"></a>
+                        <a href="https://www.skyairline.com" target="_blank"><img src="/images/sky-logo.png"
+                                alt="Sky"></a>
+                        <p><strong>+21</strong> CONVENIOS CON <strong>AEROLÍNEAS</strong> ALREDEDOR DEL MUNDO</p>
                     </div>
-                    <p>"Excelente servicio, me ayudaron a encontrar las mejores opciones de vuelo y alojamiento al mejor precio..."</p>
-                    <p class="author">- María Gómez</p>
                 </div>
-                <div class="testimonial">
-                    <div class="author-info">
-                        <img src="/images/AnaS.png" alt="AnaSantos">
+
+                <!-- Contenedor para imágenes de Hoteles Internacionales -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <a href="https://www.instagram.com/sheratonlima/?hl=es" target="_blank"><img
+                                src="/images/sheraton-logo.png" alt="Hotel Internacional 1"></a>
+                        <a href="https://www.marriott.com" target="_blank"><img src="/images/marriot-logo.png"
+                                alt="Hotel Internacional 2"></a>
+                        <p><strong>+69</strong> CONVENIOS CON <strong>HOTELES</strong> ALREDEDOR DEL MUNDO</p>
                     </div>
-                    <p>"Estoy impresionada con el nivel de atención y profesionalismo de la empresa. Gracias a ellos, mi viaje fue una experiencia inolvidable..."</p>
-                    <p class="author">- Ana Santos</p>
                 </div>
-                <div class="testimonial">
-                    <div class="author-info">
-                        <img src="/images/LuisM.png" alt="LuisMartinez">
+
+                <!-- Contenedor para imágenes de Restaurantes con Estrellas Michelin -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <a href="https://www.mirazur.fr/" target="_blank"><img src="/images/mirazur-logo.png"
+                                alt="Restaurante Estrella Michelin 1"></a>
+                        <a href="https://www.geranium.dk/en/" target="_blank"><img src="/images/geranium-logo.png"
+                                alt="Restaurante Estrella Michelin 2"></a>
+                        <p><strong>+169</strong> CONVENIOS CON <strong>RESTAURANTES</strong> ALREDEDOR DEL MUNDO</p>
                     </div>
-                    <p>"Increíble servicio de atención al cliente. Siempre dispuestos a ayudar y resolver cualquier duda. ¡Mi experiencia fue fantástica gracias a ellos!"</p>
-                    <p class="author">- Luis Martínez</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Sección Testimonios -->
+        <section class="testimonios">
+            <div class="section-content">
+                <h2>Testimonios</h2>
+                <div class="grid-container">
+                    <div class="testimonial">
+                        <div class="author-info">
+                            <img src="/images/JuanP.png" alt="JuanPerez">
+                        </div>
+                        <p>"Gracias a la empresa de organización de viajes, pude disfrutar de unas vacaciones perfectas
+                            sin preocuparme por la planificación..."</p>
+                        <p class="author">- Juan Pérez</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="author-info">
+                            <img src="/images/MariaG.png" alt="MariaGomez">
+                        </div>
+                        <p>"Excelente servicio, me ayudaron a encontrar las mejores opciones de vuelo y alojamiento al
+                            mejor precio..."</p>
+                        <p class="author">- María Gómez</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="author-info">
+                            <img src="/images/AnaS.png" alt="AnaSantos">
+                        </div>
+                        <p>"Estoy impresionada con el nivel de atención y profesionalismo de la empresa. Gracias a
+                            ellos, mi viaje fue una experiencia inolvidable..."</p>
+                        <p class="author">- Ana Santos</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="author-info">
+                            <img src="/images/LuisM.png" alt="LuisMartinez">
+                        </div>
+                        <p>"Increíble servicio de atención al cliente. Siempre dispuestos a ayudar y resolver cualquier
+                            duda. ¡Mi experiencia fue fantástica gracias a ellos!"</p>
+                        <p class="author">- Luis Martínez</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="gallery">
             <h2>Galería</h2>
@@ -187,16 +271,18 @@
                     <p>Correo Electrónico: <a href="mailto:tripteam@company">tripteam@company</a></p>
                 </div>
                 <div class="social-media">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook-f"></i></a>
                 </div>
                 <p class="copyright">&copy; 2024 TripMate. Todos los derechos reservados.</p>
 
             </div>
         </footer>
-        
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@7.5.1/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
 </body>
+
 </html>
