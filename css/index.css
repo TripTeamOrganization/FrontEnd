@@ -349,7 +349,7 @@ nav ul li a:hover {
 /*testimonios*/
 
 .testimonios {
-    background-color: #f9f9f9; /* Color de fondo */
+    background-color: rgba(249, 249, 249, 0.8);
     padding: 40px 0; /* Espaciado interno */
 }
 
@@ -360,9 +360,7 @@ nav ul li a:hover {
 }
 
 .testimonial {
-    background-color: #fff; /* Color de fondo */
     border-radius: 8px; /* Borde redondeado */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     padding: 20px; /* Espaciado interno */
     margin-bottom: 24px; /* Espaciado inferior */
 }
@@ -375,6 +373,7 @@ nav ul li a:hover {
 }
 
 .testimonial p {
+    color: black !important;
     font-size: 1rem; /* Tamaño del texto */
     line-height: 1.5; /* Altura de línea */
     margin-bottom: 10px; /* Espaciado inferior */
