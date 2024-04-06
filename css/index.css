@@ -1,4 +1,5 @@
 /* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Mantenemos oculto el desplazamiento horizontal */
+    overflow-x: hidden; 
 }
 
 .video-container {
@@ -36,21 +37,21 @@ video {
 
 /* Header */
 header {
-    padding: 20px 20px; /* Ajustado para tener un relleno uniforme */
+    padding: 20px 40px; 
     position: fixed;
-    top: 0; /* Fijar en la parte superior */
+    top: 0; 
     left: 0;
-    right: 0; /* Ocupar todo el ancho disponible */
+    right: 0; 
     background-color: rgba(0, 0, 0, 0.888);
-    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    z-index: 1000; 
 }
 
 /* Estilos para el navbar */
 nav {    
-    height: 50px; /* Altura del navbar */
+    height: 50px; 
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 nav ul {
@@ -58,11 +59,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+    justify-content: center;
 }
 
 nav ul li {
-    margin-right: 20px; /* Espacio entre elementos reducido para responsividad */
+    margin-right: 20px;
 }
 
 nav ul li:last-child {
@@ -72,13 +74,33 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 18px;
+    font: 18px "Roboto";
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffd700;
+}
+.auth-buttons {
+    margin-left: auto;
+    align-items: center;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .toggle_btn {
@@ -172,6 +194,7 @@ div li a:hover {
     display: flex;
     justify-content: center;
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1); /* Escala normal */
@@ -185,9 +208,9 @@ div li a:hover {
 }
 .btnEmpezar .btn {
     display: inline-block;
+    font: 18px "Roboto";
     padding: 15px 30px;
     font-size: 1.3em;
-    font-weight: bold;
     background-color: #4CAF50;
     color: #fff;
     text-decoration: none;
@@ -261,9 +284,9 @@ div li a:hover {
 
 
 .features {
+    display: grid;
     text-align: center;
     padding: 25px 0;
-    display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 15px; /* Espacio entre las columnas */
 }
@@ -304,6 +327,33 @@ div li a:hover {
     font-size: 1.2em;
 
 }
+/*@media(max-width: 780px) {
+    .feature{
+        width: 80%;
+    }
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        /*flex-direction: column; /* Columna en lugar de fila */
+/*    }
+}*/
+@media(max-width: 600px) {
+    .feature{
+        width: 80%;
+    }
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        flex-direction: column; /* Columna en lugar de fila */
+    }
+}
+
 
 /* Gallery Section */
 .gallery {
@@ -333,6 +383,7 @@ div li a:hover {
 
 /* Contenedor de las tarjetas */
 .Cards {
+    font-family: 'Roboto';
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -412,7 +463,20 @@ div li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 660px) {
+    .Cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
+    /* Estilos para las tarjetas en dispositivos móviles */
+    .card, .cardP {
+        width: 300px; 
+        margin-bottom: 10px; /* Espacio entre tarjetas reducido */
+    }
+}
 /* Utilizando Grid para las secciones */
 .section-content {
     width: 80%;
@@ -433,7 +497,7 @@ div li a:hover {
     gap: 20px; /* Espacio entre los elementos */
 }
 
-/*testimonios*/
+
 /* Estilos Convenios */
 .convenios {
     padding: 20px;
@@ -487,6 +551,7 @@ div li a:hover {
         height: 100px;
     }
 }
+
 
 
 .testimonial {
@@ -562,20 +627,19 @@ footer {
     padding: 20px 0;
     background-color: #f4f4f4;
     color: #333; /* Color de texto */
+    font: normal 16px "Roboto"
 }
 
 .footer-container {
-    margin-left: 15%;
-    margin-right: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espacio entre elementos */
-    justify-items: center; /* Centrar elementos horizontalmente */
-    align-items: center; /* Centrar elementos verticalmente */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 5px 15px;
 }
 
 .social-media {
@@ -600,6 +664,21 @@ footer {
     transform: scale(1.1);
 }
 
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        text-align: center; /* Centra el texto en el footer */
+    }
+
+    .contact-info p {
+        margin: 0.5px 0; /* Reducir el margen entre líneas */
+    }
+
+    .social-media {
+        justify-self: center; /* Centra los iconos de redes sociales */
+    }
+}
 /* Iconos de redes sociales */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
