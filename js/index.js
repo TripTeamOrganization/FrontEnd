@@ -6,9 +6,6 @@ function mostrarMenu() {
     else 
         divAuthButtons.style.display = "block";
 
-    //console.log("log del div inicial", divAuthButtons);
-
-    //Div de botones  de navegación
     const divBotones = document.getElementById("menuList");
     if (divBotones.style.display === "block")
         divBotones.style.display = "none";
