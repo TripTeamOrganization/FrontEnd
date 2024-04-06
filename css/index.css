@@ -1,4 +1,5 @@
 /* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Mantenemos oculto el desplazamiento horizontal */
+    overflow-x: hidden; 
 }
 
 .video-container {
@@ -36,21 +37,21 @@ video {
 
 /* Header */
 header {
-    padding: 20px 20px; /* Ajustado para tener un relleno uniforme */
+    padding: 20px 40px; 
     position: fixed;
-    top: 0; /* Fijar en la parte superior */
+    top: 0; 
     left: 0;
-    right: 0; /* Ocupar todo el ancho disponible */
+    right: 0; 
     background-color: rgba(0, 0, 0, 0.888);
-    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    z-index: 1000; 
 }
 
 /* Estilos para el navbar */
 nav {    
-    height: 50px; /* Altura del navbar */
+    height: 50px; 
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 nav ul {
@@ -58,11 +59,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+    justify-content: center;
 }
 
 nav ul li {
-    margin-right: 20px; /* Espacio entre elementos reducido para responsividad */
+    margin-right: 20px;
 }
 
 nav ul li:last-child {
@@ -72,20 +74,127 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 18px;
+    font: 18px "Roboto";
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffd700;
 }
+.auth-buttons {
+    margin-left: auto;
+    align-items: center;
+}
 
+.auth-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.888);
+    overflow: hidden;
+}
+
+.dropdown_menu .open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#authButtonsContainers {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.888);
+}
+
+#menuList {
+    background-color: rgba(0, 0, 0, 0.888);
+}
+div li a {
+    text-decoration: none;
+    color: #fff;
+    font: 18px "Roboto";
+    transition: color 0.3s ease;    
+}
+
+div li a:hover {
+    color: #ffd700;
+}
+
+@media (max-width: 910px) {
+    nav {    
+        justify-content: right;
+    }
+    nav ul {
+        display: none;
+    }
+    .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: none;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    .dropdown_menu.open {
+        display: block;
+    }
+    .dropdown_menu li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #authButtonsContainers {
+        position: absolute;
+        top: 90px;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        right: 0; 
+    }
+    #divAuthButtonsNav {
+        display: none;    
+    } 
+}
 
 .btnEmpezar {
     display: flex;
     justify-content: center;
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1); /* Escala normal */
@@ -99,9 +208,9 @@ nav ul li a:hover {
 }
 .btnEmpezar .btn {
     display: inline-block;
+    font: 18px "Roboto";
     padding: 15px 30px;
     font-size: 1.3em;
-    font-weight: bold;
     background-color: #4CAF50;
     color: #fff;
     text-decoration: none;
@@ -175,9 +284,9 @@ nav ul li a:hover {
 
 
 .features {
+    display: grid;
     text-align: center;
     padding: 25px 0;
-    display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
     gap: 15px; /* Espacio entre las columnas */
 }
@@ -218,6 +327,33 @@ nav ul li a:hover {
     font-size: 1.2em;
 
 }
+/*@media(max-width: 780px) {
+    .feature{
+        width: 80%;
+    }
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        /*flex-direction: column; /* Columna en lugar de fila */
+/*    }
+}*/
+@media(max-width: 600px) {
+    .feature{
+        width: 80%;
+    }
+    .features {
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Cambio a flexbox */
+        flex-direction: column; /* Columna en lugar de fila */
+    }
+}
+
 
 /* Gallery Section */
 .gallery {
@@ -247,6 +383,7 @@ nav ul li a:hover {
 
 /* Contenedor de las tarjetas */
 .Cards {
+    font-family: 'Roboto';
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -326,7 +463,20 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 660px) {
+    .Cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
+    /* Estilos para las tarjetas en dispositivos móviles */
+    .card, .cardP {
+        width: 300px; 
+        margin-bottom: 10px; /* Espacio entre tarjetas reducido */
+    }
+}
 /* Utilizando Grid para las secciones */
 .section-content {
     width: 80%;
@@ -346,6 +496,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye los elementos en filas automáticamente */
     gap: 20px; /* Espacio entre los elementos */
 }
+
 
 /* Estilos Convenios */
 .convenios {
@@ -409,13 +560,60 @@ nav ul li a:hover {
     border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
+/*testimonios*/
+
+.testimonios {
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 40px 0; /* Espaciado interno */
+}
+
+.testimonios h2 {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    padding: 25px 0;
+}
+
+.testimonial {
+    border-radius: 8px; /* Borde redondeado */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 24px; /* Espaciado inferior */
+}
+
 /* Estilos adicionales para los títulos dentro de la clase .section-content */
 .section-content h2 {
     font-size: 2.5rem; /* Tamaño del título */
     font-family:'Times New Roman', Times, serif;
     color: #0b0c0c; /* Color del texto */
+}
+
+.testimonial p {
+    color: black !important;
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.5; /* Altura de línea */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.author {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+    text-align: right; /* Alineación del texto */
+}
+
+.author-info {
+    text-align: center; /* Alineación del contenido */
+}
+
+.author-info img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Forma circular */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 2px solid #fff; /* Borde blanco para resaltar */
+}
+
+.author-info img:hover {
+    transform: scale(1.1);
 }
 
 /* Estilos adicionales para los subtítulos dentro de la clase .section-content */
@@ -429,20 +627,19 @@ footer {
     padding: 20px 0;
     background-color: #f4f4f4;
     color: #333; /* Color de texto */
+    font: normal 16px "Roboto"
 }
 
 .footer-container {
-    margin-left: 15%;
-    margin-right: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espacio entre elementos */
-    justify-items: center; /* Centrar elementos horizontalmente */
-    align-items: center; /* Centrar elementos verticalmente */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 5px 15px;
 }
 
 .social-media {
@@ -467,6 +664,21 @@ footer {
     transform: scale(1.1);
 }
 
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        text-align: center; /* Centra el texto en el footer */
+    }
+
+    .contact-info p {
+        margin: 0.5px 0; /* Reducir el margen entre líneas */
+    }
+
+    .social-media {
+        justify-self: center; /* Centra los iconos de redes sociales */
+    }
+}
 /* Iconos de redes sociales */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 

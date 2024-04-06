@@ -24,8 +24,27 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Acerca</a></li>
                     <li><a href="#">Covenios</a></li>
-                    <li><a href="#">Testimonios</a></li>
+                    <li><a href="#" id="boton-testimonios">Testimonios</a></li>
                 </ul>
+                <div id="divAuthButtonsNav" class="auth-buttons">
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="registro.html">Registrarse</a> 
+                </div>
+                <div class="toggle_btn">
+                    <i id="barsIcon" onclick="mostrarMenu()" class="fa-solid fa-bars"></i>
+                </div>
+            
+                <div id="authButtonsContainers" class="auth-buttons">
+                    <a href="login.html">Iniciar sesión</a> 
+                    <a href="registro.html">Registrarse</a>
+                </div>
+                
+                <div id="menuList" class="dropdown_menu">                     
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca</a></li>
+                    <li><a href="#">Covenios</a></li>
+                    <li><a href="#">Testimonios</a></li>                    
+                </div>    
             </nav>
         </header>
         <div class="heroclass">
@@ -46,59 +65,7 @@
         <a href="#" class="btn">Empezar Ahora</a>
         </section>
         <section class="features">
-        <div class="feature">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Explora Destinos</h3>
-            <p>Descubre nuevos slugares impresionantes.</p>
-        </div>
-        <div class="feature">
-            <i class="fas fa-plane"></i>
-            <h3>Vuelos Baratos</h3>
-            <p>Encuentra los vuelos más económicos.</p>
-        </div>
-        <div class="feature">
-            <i class="fas fa-hotel"></i>
-            <h3>Alojamiento de Calidad</h3>
-            <p>Reserva hoteles de alta calidad al mejor precio.</p>
-        </div>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Explora Destinos</h3>
-            <p>Descubre nuevos lugares impresionantes.</p>
-        </div>
-        <div class="feature">
-            <i class="fas fa-plane"></i>
-            <h3>Vuelos Baratos</h3>
-            <p>Encuentra los vuelos más económicos.</p>
-        </div>
-        <div class="feature">
-            <i class="fas fa-hotel"></i>
-            <h3>Alojamiento de Calidad</h3>
-            <p>Reserva hoteles de alta calidad al mejor precio.</p>
-        </div>
 
-    </section>
-    <section class="features">
-
-    <div class="feature">
-        <i class="fas fa-utensils"></i>
-        <h3>Gastronomía Excepcional</h3>
-        <p>Descubre restaurantes excepcionales y disfruta de la mejor comida.</p>
-    </div>
-    <div class="feature">
-        <i class="fas fa-briefcase"></i>
-        <h3>Itinerarios Personalizados</h3>
-        <p>Obtén itinerarios adaptados a tus preferencias y necesidades.</p>
-    </div>
-    <div class="feature">
-        <i class="fas fa-globe"></i>
-        <h3>Información Global</h3>
-        <p>Accede a información detallada sobre destinos de todo el mundo.</p>
-    </div>
-    </section>
-        <section class="features">
             <div class="Cards">
                 <div class="card">
                     <h2>Plan Gratuito</h2>
@@ -133,55 +100,38 @@
 
     <!-- Sección Convenios -->
 
-    <section class="convenios">
-        <div class="section-content">
-            <h2>Convenios</h2>
-            <br>
-            <p>Trabajamos en estrecha colaboración con aerolíneas, hoteles y restaurantes para ofrecer a nuestros clientes una experiencia de viaje completa y satisfactoria. Además, hemos establecido asociaciones con programas de aerolíneas como Avianca y Sky, así como con hoteles internacionales y restaurantes con estrellas Michelin para ampliar aún más las opciones y beneficios para nuestros clientes:</p><br >
-            <br><br>
-            <!-- Contenedor para imágenes de Avianca y Sky -->
-            <div class="slider-container">
-
-                <div class="slider">
-                    <a href="https://www.avianca.com" target="_blank"><img src="/images/Avianca-logo.png" alt="Avianca"></a>
-                    <a href="https://www.skyairline.com" target="_blank"><img src="/images/sky-logo.png" alt="Sky"></a>
-                    <p><strong>+21</strong> CONVENIOS CON <strong>AEROLÍNEAS</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-            
-            <!-- Contenedor para imágenes de Hoteles Internacionales -->
-            <div class="slider-container">
-                <div class="slider">
-                    <a href="https://www.instagram.com/sheratonlima/?hl=es" target="_blank"><img src="/images/sheraton-logo.png" alt="Hotel Internacional 1"></a>
-                    <a href="https://www.marriott.com" target="_blank"><img src="/images/marriot-logo.png" alt="Hotel Internacional 2"></a>
-                    <p><strong>+69</strong> CONVENIOS CON <strong>HOTELES</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-            
-            <!-- Contenedor para imágenes de Restaurantes con Estrellas Michelin -->
-            <div class="slider-container">
-                <div class="slider">
-                    <a href="https://www.mirazur.fr/" target="_blank"><img src="/images/mirazur-logo.png" alt="Restaurante Estrella Michelin 1"></a>
-                    <a href="https://www.geranium.dk/en/" target="_blank"><img src="/images/geranium-logo.png" alt="Restaurante Estrella Michelin 2"></a>
-                    <p><strong>+169</strong> CONVENIOS CON <strong>RESTAURANTES</strong> ALREDEDOR DEL MUNDO</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
     <!-- Sección Testimonios -->
     <section class="testimonios">
         <div class="section-content">
             <h2>Testimonios</h2>
             <div class="grid-container">
                 <div class="testimonial">
+                    <div class="author-info">
+                        <img src="/images/JuanP.png" alt="JuanPerez">
+                    </div>
                     <p>"Gracias a la empresa de organización de viajes, pude disfrutar de unas vacaciones perfectas sin preocuparme por la planificación..."</p>
                     <p class="author">- Juan Pérez</p>
                 </div>
                 <div class="testimonial">
+                    <div class="author-info">
+                        <img src="/images/MariaG.png" alt="MariaGomez">
+                    </div>
                     <p>"Excelente servicio, me ayudaron a encontrar las mejores opciones de vuelo y alojamiento al mejor precio..."</p>
                     <p class="author">- María Gómez</p>
+                </div>
+                <div class="testimonial">
+                    <div class="author-info">
+                        <img src="/images/AnaS.png" alt="AnaSantos">
+                    </div>
+                    <p>"Estoy impresionada con el nivel de atención y profesionalismo de la empresa. Gracias a ellos, mi viaje fue una experiencia inolvidable..."</p>
+                    <p class="author">- Ana Santos</p>
+                </div>
+                <div class="testimonial">
+                    <div class="author-info">
+                        <img src="/images/LuisM.png" alt="LuisMartinez">
+                    </div>
+                    <p>"Increíble servicio de atención al cliente. Siempre dispuestos a ayudar y resolver cualquier duda. ¡Mi experiencia fue fantástica gracias a ellos!"</p>
+                    <p class="author">- Luis Martínez</p>
                 </div>
             </div>
         </div>
