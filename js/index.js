@@ -1,3 +1,18 @@
+//add onclick event to tag barsIcon to show the menu    
+function mostrarMenu() {
+    const divAuthButtons = document.getElementById("authButtonsContainers");
+    if (divAuthButtons.style.display === "block") 
+        divAuthButtons.style.display = "none";
+    else 
+        divAuthButtons.style.display = "block";
+
+    const divBotones = document.getElementById("menuList");
+    if (divBotones.style.display === "block")
+        divBotones.style.display = "none";
+    else 
+        divBotones.style.display = "block";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const imageContainer = document.getElementById("imageContainer");
     const images = ["../images/1.jpg", "../images/2.jpg", "../images/3.jpg", "../images/4.jpg", "../images/5.jpg"];
