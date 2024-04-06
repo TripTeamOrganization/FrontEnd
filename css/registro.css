@@ -1,7 +1,7 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;  
+    box-sizing: border-box;
 }
 
 body {
@@ -9,57 +9,83 @@ body {
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: #333;
 
 }
-.contenedor{
+
+.contenedor {
     width: 100%;
     min-height: 100vh;
 
     transition: all .3s ease;
 }
+
 .contenedor.active {
-    grid-template-columns: minmax(300px,18%) auto;
+    grid-template-columns: minmax(300px, 18%) auto;
 }
+
 /* Estilos para el cuerpo de la alerta */
 .custom-alert {
-    background-color: #ff5733; /* Color de fondo */
-    color: white; /* Color del texto */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
-    font-size: 18px; /* Tamaño de fuente */
-    text-align: center; /* Alineación de texto */
-    position: absolute; /* Posición absoluta */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra completamente */
-    z-index: 9999; /* Z-index alto para superponer a otros elementos */
+    background-color: #ff5733;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 15px;
+    /* Espaciado interno */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    text-align: center;
+    /* Alineación de texto */
+    position: absolute;
+    /* Posición absoluta */
+    top: 50%;
+    /* Centra verticalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra completamente */
+    z-index: 9999;
+    /* Z-index alto para superponer a otros elementos */
 }
 
 /* Estilos para el triángulo de la alerta */
 .custom-alert::before {
-    content: ""; /* Contenido vacío */
-    position: absolute; /* Posición absoluta */
-    top: -10px; /* Posicionamiento superior */
-    left: 50%; /* Posicionamiento izquierdo al 50% del elemento padre */
-    margin-left: -10px; /* Alineación horizontal del triángulo */
-    border-width: 10px; /* Tamaño del triángulo */
-    border-style: solid; /* Estilo de borde sólido */
-    border-color: transparent transparent #ff5733 transparent; /* Color de borde */
+    content: "";
+    /* Contenido vacío */
+    position: absolute;
+    /* Posición absoluta */
+    top: -10px;
+    /* Posicionamiento superior */
+    left: 50%;
+    /* Posicionamiento izquierdo al 50% del elemento padre */
+    margin-left: -10px;
+    /* Alineación horizontal del triángulo */
+    border-width: 10px;
+    /* Tamaño del triángulo */
+    border-style: solid;
+    /* Estilo de borde sólido */
+    border-color: transparent transparent #ff5733 transparent;
+    /* Color de borde */
 }
+
 /* ------------------------------------------------------------- */
-.main{
-    grid-area: contenido;   
-    background: #E9E5D8; /* E9E5D8 */
-    padding:40px;
+.main {
+    grid-area: contenido;
+    background: #E9E5D8;
+    /* E9E5D8 */
+    padding: 40px;
 }
+
 /* Estilos generales */
 body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    background-color: #e9e5d8a8; /* E9E5D8 */
+    background-color: #e9e5d8a8;
+    /* E9E5D8 */
     ;
 }
 
@@ -69,6 +95,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 /* Fondo */
 #background {
     position: fixed;
@@ -79,6 +106,7 @@ body {
     z-index: -1;
     pointer-events: none;
 }
+
 /* Estilos para la sección de registro */
 .registration {
     background-color: #ffffff;
@@ -87,8 +115,10 @@ body {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 100px;
-    max-width: 600px; /* Limitar el ancho máximo para evitar que sea demasiado ancho en pantallas grandes */
-    width: 90%; /* Añadir margen en pantallas pequeñas */
+    max-width: 600px;
+    /* Limitar el ancho máximo para evitar que sea demasiado ancho en pantallas grandes */
+    width: 90%;
+    /* Añadir margen en pantallas pequeñas */
 }
 
 .registration .title {
@@ -160,6 +190,7 @@ body {
     background-color: #111;
     transform: scale(1.1);
 }
+
 /* Estilo para el campo de teléfono */
 #telefono {
     width: 100%;
@@ -168,12 +199,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 10px;
-    font-family: 'Manrope', sans-serif; /* Selecciona la fuente deseada */
+    font-family: 'Manrope', sans-serif;
+    /* Selecciona la fuente deseada */
 }
 
 #telefono:focus {
-    border-color: #007bff; /* Cambia el color del borde al enfocar el campo */
-    outline: none; /* Elimina el contorno alrededor del campo */
+    border-color: #007bff;
+    /* Cambia el color del borde al enfocar el campo */
+    outline: none;
+    /* Elimina el contorno alrededor del campo */
 }
 
 /* Keyframes para el brillo */
@@ -181,9 +215,11 @@ body {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -194,10 +230,14 @@ body {
     .registration {
         padding: 30px;
     }
+
     .menu-lateral {
-        transform: translateX(-100%); /* Mover la barra lateral fuera de la pantalla */
-        display: none; /* Ocultarla para evitar interacciones */
+        transform: translateX(-100%);
+        /* Mover la barra lateral fuera de la pantalla */
+        display: none;
+        /* Ocultarla para evitar interacciones */
     }
+
     .registration .title {
         font-size: 28px;
     }
@@ -220,69 +260,86 @@ body {
 
 
 /*------------------------ MEDIA QUERY ------------------- */
-@media screen and (max-width: 1200px){
-    .header .contenedor-logo .logo span{
+@media screen and (max-width: 1200px) {
+    .header .contenedor-logo .logo span {
         display: none;
     }
+
     .header .barra-busqueda input {
         min-width: 100%;
     }
+
     .main .como-funciona-image {
         display: none;
+    }
+
+    @media screen and (max-width: 992px) {}
 }
-@media screen and (max-width: 992px){
- 
-}
-}
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .contenedor {
-        grid-template-columns: 1fr; /* Cambiamos a una sola columna */
-        grid-template-rows: auto auto; /* Añadimos filas adicionales para el contenido */
-        grid-template-areas: 
+        grid-template-columns: 1fr;
+        /* Cambiamos a una sola columna */
+        grid-template-rows: auto auto;
+        /* Añadimos filas adicionales para el contenido */
+        grid-template-areas:
             "header"
             "menu"
-            "contenido"; /* Reorganizamos el área de contenido */    
+            "contenido";
+        /* Reorganizamos el área de contenido */
     }
+
     .header {
         padding: 20px;
         grid-template-columns: auto auto;
         justify-content: space-between;
         grid-template-areas: "logo iconos"
-                             "busqueda busqueda"; 
-    }    
+            "busqueda busqueda";
+    }
+
     .header .contenedor-logo .logo span {
         display: inline;
     }
+
     .header .barra-busqueda input {
         min-width: auto;
         width: 100%;
     }
+
     .main .como-funciona {
         flex-direction: column;
     }
 
-      /* Estilos para el botón "Empezar Ahora" */
-      .main .como-funciona button.btn-empezar {
-        width: 100%; /* Hacemos que el botón ocupe todo el ancho disponible */
-        margin-right: 0; /* Quitamos el margen derecho */
+    /* Estilos para el botón "Empezar Ahora" */
+    .main .como-funciona button.btn-empezar {
+        width: 100%;
+        /* Hacemos que el botón ocupe todo el ancho disponible */
+        margin-right: 0;
+        /* Quitamos el margen derecho */
     }
+
     /* Ajustamos el tamaño del logo en el encabezado */
     .header .contenedor-logo .logo {
-        font-size: 14px; /* Reducimos el tamaño de la fuente del logo */
+        font-size: 14px;
+        /* Reducimos el tamaño de la fuente del logo */
     }
+
     .main .como-funciona-content {
         margin-bottom: 20px;
     }
 
     .main .como-funciona-image {
         text-align: center;
-    }   
+    }
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
+
     .main .como-funciona .titulo,
     .main .como-funciona ol {
         display: none;
     }
+
     /* Mostrar el botón */
     .main .como-funciona button.btn-empezar {
         display: block;
