@@ -66,3 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
     renderImage(currentIndex); // Renderiza la primera imagen
     autoChangeImage(); // Inicia el cambio automático de imágenes
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const Link = document.getElementById("boton-testimonios");
+
+    Link.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        document.querySelector(".testimonios").scrollIntoView({ behavior: "smooth" });
+    });
+});
