@@ -43,7 +43,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.888);
+    background-color: #000000e2;
     z-index: 1000;
 }
 
@@ -472,7 +472,7 @@ div li a:hover {
 /* Texto de la tarjeta */
 .card p,
 .cardP p {
-    color: #555555;
+    color: #777777;
     margin-bottom: 20px;
     font-family: "Asap";
 }
@@ -687,7 +687,7 @@ div li a:hover {
     font-size: 2.5rem;
     /* Tamaño del título */
     font-family: "Roboto";
-    color: #0b0c0c;
+    color: black;
     /* Color del texto */
 }
 
@@ -848,7 +848,7 @@ footer {
 .about h1 {
     color: #ffffff;
     border-radius: 70%;
-    font-size: 4em;
+    font-size: 3.6em;
     margin-bottom: 20px;
     font-family: "Asap";
 }
