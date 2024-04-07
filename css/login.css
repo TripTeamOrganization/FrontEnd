@@ -8,7 +8,9 @@ body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    background-color: #e9e5d8a8;
+    background-image: url(/images/fondoLoginRegister.png);
+    background-size: cover; 
+    background-position: center; 
 }
 
 .container {

@@ -6,6 +6,9 @@
 
 body {
     font-family: monospace;
+    background-image: url(/images/fondoLoginRegister.png);
+    background-size: cover; 
+    background-position: center; 
 }
 
 a {
@@ -114,11 +117,9 @@ body {
     padding: 50px;
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: auto;
     max-width: 600px;
-    /* Limitar el ancho máximo para evitar que sea demasiado ancho en pantallas grandes */
     width: 90%;
-    /* Añadir margen en pantallas pequeñas */
 }
 
 .registration .title {
