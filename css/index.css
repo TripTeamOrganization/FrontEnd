@@ -450,7 +450,7 @@ div li a:hover {
 .card,
 .cardB,
 .cardP {
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -559,7 +559,7 @@ div li a:hover {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 660px) {
+@media (max-width: 690px) {
     .Cards {
         display: flex;
         flex-wrap: wrap;
@@ -683,7 +683,7 @@ div li a:hover {
 /*testimonios*/
 
 .testimonios {
-    background-color: rgba(249, 249, 249, 0.8);
+    background-color: #f9f9f9cc;
     padding: 40px 0;
     /* Espaciado interno */
 }
@@ -882,7 +882,7 @@ footer {
     font-size: 1.6em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #ffffffb3;
     color: #000000;
     font-family: "Asap";
 }
