@@ -65,7 +65,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     justify-content: center;
 }
 
@@ -157,7 +157,7 @@ div li a:hover {
     color: #ffd700;
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1150px) {
     nav {
         justify-content: right;
     }
@@ -176,7 +176,7 @@ div li a:hover {
         top: 150.7px;
         right: 0;
         width: 100%;
-        height: 200px;
+        height: 250px;
         text-align: center;
     }
 
@@ -433,7 +433,7 @@ div li a:hover {
 
 /* Estilos generales */
 /* Contenedor principal de características */
-.features {
+.features2 {
     display: flex;
     justify-content: center;
 }
@@ -451,6 +451,7 @@ div li a:hover {
 .cardB,
 .cardP {
     padding: 10px;
+    text-align: center;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);

@@ -68,6 +68,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const Link = document.getElementById("boton-Inicio");
+
+    Link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const Link = document.getElementById("boton-Cards");
+
+    Link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        document.querySelector(".features2").scrollIntoView({ behavior: "smooth" });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
     const Link = document.getElementById("boton-testimonios");
 
     Link.addEventListener("click", function (event) {
@@ -76,7 +94,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".testimonios").scrollIntoView({ behavior: "smooth" });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const Link = document.getElementById("boton-Convenios");
 
+    Link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        document.querySelector(".convenios").scrollIntoView({ behavior: "smooth" });
+    });
+});
 document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById("boton-acerca");
 
