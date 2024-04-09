@@ -231,13 +231,14 @@ div li a:hover {
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     animation: pulse 2s infinite;
     position: relative;
     top: -70px;
+
 }
 
 .btnEmpezar .btn:hover {
@@ -259,6 +260,7 @@ div li a:hover {
     margin-top: 150px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50px;
+    height: 31rem;
 }
 
 
