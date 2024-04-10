@@ -207,45 +207,40 @@ div li a:hover {
     display: flex;
     justify-content: center;
 }
-
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(1); /* Escala normal */
     }
-
     50% {
-        transform: scale(1.1);
+        transform: scale(1.1); /* Escala aumentada al 110% */
     }
-
     100% {
-        transform: scale(1);
+        transform: scale(1); /* Vuelve a la escala normal */
     }
 }
-
 .btnEmpezar .btn {
     display: inline-block;
-    font: 18px "Roboto";
     padding: 15px 30px;
     font-size: 1.3em;
-    background-color: #3A6CEC;
+    font-weight: bold;
+    background-color: #4CAF50;
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Se añade transform */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     animation: pulse 2s infinite;
-    position: relative;
-    top: -70px;
-
+    position: relative; /* Añadido para posicionar de manera absoluta el botón */
+    top: -70px; /* Ajusta la posición hacia arriba */
 }
 
 .btnEmpezar .btn:hover {
-    background-color: #3A6CEC;
+    background-color: #45a049;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
     animation: none;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Hace que el botón se haga más grande al 10% */
 }
 
 /* Hero Section */
@@ -255,39 +250,38 @@ div li a:hover {
 
 .hero {
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
     transition: ease-in-out 0.5s;
-    margin-top: 150px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50px;
-    height: 31rem;
 }
 
+.hero:hover {
+    background-color: rgba(0, 0, 0, 0.255); /* Fondo semi-transparente */
+    border-radius: 50px; /* Bordes redondeados */
+}
 
 .hero h1 {
     color: #ffffff;
-    font-size: 3.6em;
-    font-family: "Roboto";
+    font-size: 3.8em; /* Tamaño del título ajustado */
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+    position: relative; /* Añadido para alinear elementos */
+    line-height: 1.2; /* Espacio entre líneas ajustado */
 }
 
 .hero h1 span {
-    font-weight: normal;
+    font-weight: normal; /* Palabras no clave en peso normal */
 }
 
 .hero h1 span.highlight {
-    font-weight: bold;
-    color: #3A6CEC;
+    font-weight: bold; /* Palabras clave en negrita */
+    color: #ff4081; /* Color destacado */
 }
+
 
 .hero p {
     font-size: 1.6em;
     color: #ffffff;
-    opacity: 0.8;
-    font-family: "Asap";
+    opacity: 0.8; /* Opacidad reducida para el subtítulo */
 }
 
 
