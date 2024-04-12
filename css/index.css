@@ -578,8 +578,6 @@ div li a:hover {
     margin: 0 auto;
 }
 
-
-
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -609,6 +607,11 @@ div li a:hover {
     margin-bottom: 20px;
 }
 
+.testimonial {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
 
 .testimonios {
     background-color: #f9f9f9cc;
@@ -622,10 +625,12 @@ div li a:hover {
     font-family: "Roboto";
 }
 
-.testimonial {
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 24px;
+.testimonial p {
+    color: black !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: "Asap";
 }
 
 .section-content h2 {
@@ -634,13 +639,6 @@ div li a:hover {
     color: black;
 }
 
-.testimonial p {
-    color: black !important;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    font-family: "Asap";
-}
 
 .author {
     font-size: 0.9rem;
