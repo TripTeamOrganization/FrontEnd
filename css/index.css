@@ -229,7 +229,7 @@ div li a:hover {
     padding: 15px 30px;
     font-size: 1.3em;
     font-weight: bold;
-    background-color: #4CAF50;
+    background-color: #3A6CEC;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -243,7 +243,7 @@ div li a:hover {
 }
 
 .btnEmpezar .btn:hover {
-    background-color: #45a049;
+    background-color: #3A6CEC;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
     animation: none;
     transform: scale(1.1);
