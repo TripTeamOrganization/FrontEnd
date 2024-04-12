@@ -11,6 +11,13 @@ body {
     background-position: center;
 }
 
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e5d8a8;
+}
+
 a {
     text-decoration: none;
     color: #333;
@@ -78,14 +85,7 @@ a {
 }
 
 
-body {
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
-    background-color: #e9e5d8a8;
 
-    ;
-}
 
 .container {
     display: flex;
@@ -105,6 +105,10 @@ body {
     pointer-events: none;
 }
 
+.label-container {
+    text-align: left;
+    margin-bottom: 5px;
+}
 
 .registration {
     background-color: #ffffff;
@@ -143,12 +147,6 @@ body {
     text-align: left;
 }
 
-
-.label-container {
-    text-align: left;
-    margin-bottom: 5px;
-}
-
 .registration input[type="text"],
 .registration input[type="email"],
 .registration input[type="password"] {
@@ -158,18 +156,6 @@ body {
     border-radius: 5px;
     font-size: 16px;
 }
-
-
-.error-message {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    color: red;
-    display: none;
-    font-size: 14px;
-    margin-top: 4px;
-}
-
 
 .registration .btn-register {
     background-color: #190933;
@@ -186,6 +172,19 @@ body {
     background-color: #111;
     transform: scale(1.1);
 }
+
+
+.error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
 
 
 #telefono {
@@ -306,18 +305,13 @@ body {
         flex-direction: column;
     }
 
-    /* Estilos para el botón "Empezar Ahora" */
     .main .como-funciona button.btn-empezar {
         width: 100%;
-        /* Hacemos que el botón ocupe todo el ancho disponible */
         margin-right: 0;
-        /* Quitamos el margen derecho */
     }
 
-    /* Ajustamos el tamaño del logo en el encabezado */
     .header .contenedor-logo .logo {
         font-size: 14px;
-        /* Reducimos el tamaño de la fuente del logo */
     }
 
     .main .como-funciona-content {
@@ -336,7 +330,6 @@ body {
         display: none;
     }
 
-    /* Mostrar el botón */
     .main .como-funciona button.btn-empezar {
         display: block;
     }

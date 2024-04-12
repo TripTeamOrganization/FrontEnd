@@ -16,18 +16,15 @@ function validarFormulario() {
         document.getElementById("emailError").style.display = "block";
         errores = 1;
     }
-
     if (password.length < 8) {
         document.getElementById("passwordError").style.display = "block";
         errores = 1;
     }
-
     if (errores === 0) {
         const userData = {
             email: email,
             password: password
         };
-
         console.log(JSON.stringify(userData, null, 2));
     }
 }

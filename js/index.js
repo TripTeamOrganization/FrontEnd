@@ -13,6 +13,7 @@ function mostrarMenu() {
         divBotones.style.display = "block";
 }
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const imageContainer = document.getElementById("imageContainer");
     const images = ["../images/1.jpg", "../images/2.jpg", "../images/3.jpg", "../images/4.jpg", "../images/5.jpg"];
@@ -60,17 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 500);
         }, 3000);
     }
-
     renderImage(currentIndex);
     autoChangeImage();
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const Link = document.getElementById("boton-Inicio");
-
     Link.addEventListener("click", function (event) {
         event.preventDefault();
-
         document.querySelector(".hero").scrollIntoView({ behavior: "smooth" });
     });
 });
@@ -79,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Link.addEventListener("click", function (event) {
         event.preventDefault();
-
         document.querySelector(".features2").scrollIntoView({ behavior: "smooth" });
     });
 });
@@ -88,13 +86,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Link.addEventListener("click", function (event) {
         event.preventDefault();
-
         document.querySelector(".testimonios").scrollIntoView({ behavior: "smooth" });
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
     const Link = document.getElementById("boton-Convenios");
-
     Link.addEventListener("click", function (event) {
         event.preventDefault();
 
@@ -103,10 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById("boton-acerca");
-
     aboutLink.addEventListener("click", function (event) {
         event.preventDefault();
-
         document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
     });
 });

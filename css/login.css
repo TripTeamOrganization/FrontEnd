@@ -9,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(/images/fondoLoginRegister.png);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -56,11 +56,6 @@ body {
     text-align: left;
 }
 
-.label-container {
-    text-align: left;
-    margin-bottom: 5px;
-}
-
 .registration input[type="email"],
 .registration input[type="password"] {
     width: 100%;
@@ -70,17 +65,7 @@ body {
     font-size: 16px;
 }
 
-.error-message {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    color: red;
-    display: none;
-    font-size: 14px;
-    margin-top: 4px;
-}
-
-.registration .btn-register {
+´ .registration .btn-register {
     background-color: #190933;
     color: #fff;
     font-size: 18px;
@@ -94,6 +79,22 @@ body {
 .registration .btn-register:hover {
     background-color: #111;
     transform: scale(1.1);
+}
+
+.label-container {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 4px;
 }
 
 @media screen and (max-width: 768px) {
