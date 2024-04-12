@@ -1,6 +1,6 @@
-/*General Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,16 +18,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     z-index: -1;
 }
 
 video {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .logo-navbar-container {
@@ -42,7 +42,6 @@ video {
     padding: 0 20px;
 }
 
-/* Header */
 header {
     padding: 20px 40px;
     position: fixed;
@@ -142,10 +141,12 @@ nav ul li a:hover {
 #menuList {
     background-color: rgba(0, 0, 0, 0.888);
 }
+
 #authButtonsContainers {
     display: none;
     background-color: rgba(0, 0, 0, 0.888);
 }
+
 div li a {
     text-decoration: none;
     color: #fff;
@@ -192,6 +193,7 @@ div li a:hover {
     #divAuthButtonsNav {
         display: none;
     }
+
     #authButtonsContainers {
         position: absolute;
         top: 64.3px;
@@ -207,17 +209,21 @@ div li a:hover {
     display: flex;
     justify-content: center;
 }
+
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Escala normal */
+        transform: scale(1);
     }
+
     50% {
-        transform: scale(1.1); /* Escala aumentada al 110% */
+        transform: scale(1.1);
     }
+
     100% {
-        transform: scale(1); /* Vuelve a la escala normal */
+        transform: scale(1);
     }
 }
+
 .btnEmpezar .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -229,21 +235,20 @@ div li a:hover {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Se añade transform */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     animation: pulse 2s infinite;
-    position: relative; /* Añadido para posicionar de manera absoluta el botón */
-    top: -70px; /* Ajusta la posición hacia arriba */
+    position: relative;
+    top: -70px;
 }
 
 .btnEmpezar .btn:hover {
     background-color: #45a049;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
     animation: none;
-    transform: scale(1.1); /* Hace que el botón se haga más grande al 10% */
+    transform: scale(1.1);
 }
 
-/* Hero Section */
 .heroclass {
     margin-top: 100px;
 }
@@ -255,33 +260,34 @@ div li a:hover {
 }
 
 .hero:hover {
-    background-color: rgba(0, 0, 0, 0.255); /* Fondo semi-transparente */
-    border-radius: 50px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.255);
+    border-radius: 50px;
 }
 
 .hero h1 {
     color: #ffffff;
-    font-size: 3.8em; /* Tamaño del título ajustado */
+    font-size: 3.8em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
-    position: relative; /* Añadido para alinear elementos */
-    line-height: 1.2; /* Espacio entre líneas ajustado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    line-height: 1.2;
 }
 
 .hero h1 span {
-    font-weight: normal; /* Palabras no clave en peso normal */
+    font-weight: normal;
 }
 
 .hero h1 span.highlight {
-    font-weight: bold; /* Palabras clave en negrita */
-    color: #ff4081; /* Color destacado */
+    font-weight: bold;
+    color: #3A6CEC;
 }
 
 
 .hero p {
     font-size: 1.6em;
     color: #ffffff;
-    opacity: 0.8; /* Opacidad reducida para el subtítulo */
+    opacity: 0.8;
+
 }
 
 
@@ -346,11 +352,11 @@ div li a:hover {
         display: flex;
         flex-direction: column;
     }
-    
-}
-@media screen and (max-width: 600px) {
 
 }
+
+@media screen and (max-width: 600px) {}
+
 /* Gallery Section */
 .gallery {
     text-align: center;
@@ -374,14 +380,11 @@ div li a:hover {
 
 }
 
-/* Estilos generales */
-/* Contenedor principal de características */
 .features2 {
     display: flex;
     justify-content: center;
 }
 
-/* Contenedor de las tarjetas */
 .Cards {
     display: flex;
     flex-wrap: wrap;
@@ -389,7 +392,6 @@ div li a:hover {
     gap: 20px;
 }
 
-/* Estilos para las tarjetas */
 .card,
 .cardB,
 .cardP {
@@ -404,7 +406,6 @@ div li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Título de la tarjeta */
 .card h2,
 .cardB h2,
 .cardP h2 {
@@ -414,7 +415,6 @@ div li a:hover {
     font-family: "Roboto";
 }
 
-/* Texto de la tarjeta */
 .card p,
 .cardB p,
 .cardP p {
@@ -423,7 +423,6 @@ div li a:hover {
     font-family: "Asap";
 }
 
-/* Texto pequeño de la tarjeta */
 .card small,
 .cardB small,
 .cardP small {
@@ -433,7 +432,6 @@ div li a:hover {
     font-family: "Asap";
 }
 
-/* Lista de elementos */
 .card ul,
 .cardB ul,
 .cardP ul {
@@ -444,7 +442,6 @@ div li a:hover {
     margin-top: 10px;
 }
 
-/* Puntos de la lista */
 .card ul li,
 .cardB ul li,
 .cardP ul li {
@@ -453,7 +450,6 @@ div li a:hover {
     margin-bottom: 12px;
 }
 
-/* Estilo de los puntos */
 .card ul li::before,
 .cardB ul li::before,
 .cardP ul li::before {
@@ -463,7 +459,6 @@ div li a:hover {
     color: #888888;
 }
 
-/* Estilos específicos para la tarjeta Basic */
 .cardB {
     background-color: #f9f9f9;
     border: 2px solid #3A6CEC;
@@ -476,6 +471,7 @@ div li a:hover {
 .cardB ul li::before {
     color: #3A6CEC;
 }
+
 .cardP {
     background-color: #f9f9f9;
     border: 2px solid #ffd700;
@@ -532,16 +528,17 @@ div li a:hover {
     gap: 20px;
 }
 
-/* Estilos Convenios */
 .convenios {
     padding: 20px;
 }
-.convenios p{
+
+.convenios p {
     font-size: 1.5rem;
     color: #888;
     font-family: "Asap";
 
 }
+
 .section-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -584,7 +581,7 @@ div li a:hover {
 
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
     .section-content {
@@ -611,7 +608,6 @@ div li a:hover {
     margin-bottom: 20px;
 }
 
-/*testimonios*/
 
 .testimonios {
     background-color: #f9f9f9cc;
@@ -723,7 +719,6 @@ footer {
     }
 }
 
-/* Media queries para dispositivos móviles y tabletas */
 @media (max-width: 850px) {
 
     .footer-container {
@@ -740,7 +735,6 @@ footer {
     }
 }
 
-/* Iconos de redes sociales */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 .dark-overlay {
@@ -755,17 +749,14 @@ footer {
     transition: opacity 1s ease;
 }
 
-/* Cambia la opacidad gradualmente */
 .dark-overlay.fade-in {
     opacity: 0.5;
-    /* Opacidad final */
 }
 
 
 .about {
     text-align: center;
     padding: 70px 0;
-    /*font-family: monospace;*/
 }
 
 .about h1 {
