@@ -229,6 +229,7 @@ div li a:hover {
     padding: 15px 30px;
     font-size: 1.3em;
     font-weight: bold;
+    font-family: "roboto";
     background-color: #3A6CEC;
     color: #fff;
     text-decoration: none;
@@ -265,6 +266,7 @@ div li a:hover {
 }
 
 .hero h1 {
+    font-family: "Roboto";
     color: #ffffff;
     font-size: 3.8em;
     margin-bottom: 20px;
@@ -284,6 +286,7 @@ div li a:hover {
 
 
 .hero p {
+    font-family: "Asap";
     font-size: 1.6em;
     color: #ffffff;
     opacity: 0.8;
