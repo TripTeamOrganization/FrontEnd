@@ -511,6 +511,14 @@ div li a:hover {
     margin: 0 auto;
 }
 
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .about-us,
 .convenios,
 .testimonios {
@@ -519,12 +527,6 @@ div li a:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
 }
 
 .convenios {
@@ -538,6 +540,10 @@ div li a:hover {
 
 }
 
+.slider {
+    display: flex;
+}
+
 .slider-container {
     margin-bottom: 50px;
 }
@@ -547,10 +553,6 @@ div li a:hover {
     font-size: 24px;
     color: #ffffff;
     font-family: "Roboto";
-}
-
-.slider {
-    display: flex;
 }
 
 .slider img {
