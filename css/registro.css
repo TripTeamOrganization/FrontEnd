@@ -7,8 +7,8 @@
 body {
     font-family: monospace;
     background-image: url(/images/fondoLoginRegister.png);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
 }
 
 a {
@@ -28,67 +28,62 @@ a {
     grid-template-columns: minmax(300px, 18%) auto;
 }
 
-/* Estilos para el cuerpo de la alerta */
 .custom-alert {
     background-color: #ff5733;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
     border-radius: 5px;
-    /* Bordes redondeados */
     padding: 15px;
-    /* Espaciado interno */
     font-size: 18px;
-    /* Tamaño de fuente */
+
     text-align: center;
-    /* Alineación de texto */
+
     position: absolute;
-    /* Posición absoluta */
+
     top: 50%;
-    /* Centra verticalmente */
+
     left: 50%;
-    /* Centra horizontalmente */
+
     transform: translate(-50%, -50%);
-    /* Centra completamente */
+
     z-index: 9999;
-    /* Z-index alto para superponer a otros elementos */
+
 }
 
-/* Estilos para el triángulo de la alerta */
+
 .custom-alert::before {
     content: "";
-    /* Contenido vacío */
+
     position: absolute;
-    /* Posición absoluta */
+
     top: -10px;
-    /* Posicionamiento superior */
+
     left: 50%;
-    /* Posicionamiento izquierdo al 50% del elemento padre */
+
     margin-left: -10px;
-    /* Alineación horizontal del triángulo */
+
     border-width: 10px;
-    /* Tamaño del triángulo */
+
     border-style: solid;
-    /* Estilo de borde sólido */
+
     border-color: transparent transparent #ff5733 transparent;
-    /* Color de borde */
+
 }
 
-/* ------------------------------------------------------------- */
+
 .main {
     grid-area: contenido;
     background: #E9E5D8;
-    /* E9E5D8 */
+
     padding: 40px;
 }
 
-/* Estilos generales */
+
 body {
     font-family: monospace;
     margin: 0;
     padding: 0;
     background-color: #e9e5d8a8;
-    /* E9E5D8 */
+
     ;
 }
 
@@ -99,7 +94,7 @@ body {
     height: 100vh;
 }
 
-/* Fondo */
+
 #background {
     position: fixed;
     top: 0;
@@ -110,7 +105,7 @@ body {
     pointer-events: none;
 }
 
-/* Estilos para la sección de registro */
+
 .registration {
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -135,7 +130,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos para los campos de entrada y mensajes de error */
+
 .registration .form-group {
     margin-bottom: 32px;
     position: relative;
@@ -148,7 +143,7 @@ body {
     text-align: left;
 }
 
-/* Estilos para los contenedores de etiquetas */
+
 .label-container {
     text-align: left;
     margin-bottom: 5px;
@@ -164,7 +159,7 @@ body {
     font-size: 16px;
 }
 
-/* Estilos para los mensajes de error */
+
 .error-message {
     position: absolute;
     top: 100%;
@@ -175,7 +170,7 @@ body {
     margin-top: 4px;
 }
 
-/* Estilos para el botón de registro */
+
 .registration .btn-register {
     background-color: #190933;
     color: #fff;
@@ -192,7 +187,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Estilo para el campo de teléfono */
+
 #telefono {
     width: 100%;
     padding: 16px;
@@ -201,17 +196,17 @@ body {
     border-radius: 5px;
     margin-top: 10px;
     font-family: 'Manrope', sans-serif;
-    /* Selecciona la fuente deseada */
+
 }
 
 #telefono:focus {
     border-color: #007bff;
-    /* Cambia el color del borde al enfocar el campo */
+
     outline: none;
-    /* Elimina el contorno alrededor del campo */
+
 }
 
-/* Keyframes para el brillo */
+
 @keyframes shine {
     0% {
         opacity: 0;
@@ -226,7 +221,7 @@ body {
     }
 }
 
-/* Media queries para hacerlo responsive */
+
 @media screen and (max-width: 768px) {
     .registration {
         padding: 30px;
@@ -234,9 +229,9 @@ body {
 
     .menu-lateral {
         transform: translateX(-100%);
-        /* Mover la barra lateral fuera de la pantalla */
+
         display: none;
-        /* Ocultarla para evitar interacciones */
+
     }
 
     .registration .title {
@@ -260,7 +255,7 @@ body {
 }
 
 
-/*------------------------ MEDIA QUERY ------------------- */
+
 @media screen and (max-width: 1200px) {
     .header .contenedor-logo .logo span {
         display: none;
@@ -280,14 +275,14 @@ body {
 @media screen and (max-width: 768px) {
     .contenedor {
         grid-template-columns: 1fr;
-        /* Cambiamos a una sola columna */
+
         grid-template-rows: auto auto;
-        /* Añadimos filas adicionales para el contenido */
+
         grid-template-areas:
             "header"
             "menu"
             "contenido";
-        /* Reorganizamos el área de contenido */
+
     }
 
     .header {
