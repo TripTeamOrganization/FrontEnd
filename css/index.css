@@ -609,12 +609,6 @@ div li a:hover {
     margin-bottom: 20px;
 }
 
-.testimonial {
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 24px;
-}
-
 .testimonios {
     background-color: #f9f9f9cc;
     padding: 40px 0;
@@ -710,6 +704,12 @@ footer {
 
 .social-media a:hover {
     transform: scale(1.1);
+}
+
+.testimonial {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 1300px) {
